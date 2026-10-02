@@ -186,7 +186,7 @@ sequenceDiagram
 
     %% 5. AI Adaptations & Risk Grading
     Backend->>ML: Triggers MAB Update (Pillar 1) & Drift Regression (Pillar 3)
-    ML->>Backend: Checks >25% drops; raises Alert if anomaly detected
+    ML->>Backend: Checks over 25% drops, raises Alert if anomaly detected
     ML->>Backend: Evaluates XGBoost risk model (Grades 0-2)
 
     %% 6. Caregiver Monitoring
